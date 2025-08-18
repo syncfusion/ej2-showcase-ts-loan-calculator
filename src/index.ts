@@ -7,6 +7,10 @@ import { Ajax } from '@syncfusion/ej2-base';
 import '../styles/styles.scss';
 import '../styles/index.scss';
 
+// Import the page handlers to ensure they're loaded
+import './home/homePage';
+import './about/aboutPage';
+
 let pages: Object[] = [
     { root: 'home', page: 'homePage' },
     { root: 'about', page: 'aboutPage' },
@@ -35,10 +39,19 @@ crossroads.addRoute('/{val}', () => {
         if (document.getElementById('content-area')) {
             (document.getElementById('content-area') as HTMLElement).innerHTML = value.toString();
         }
+        // Add safety check to ensure functions exist before calling them
         if (window.location.hash.replace('#/', '') === 'home') {
-            window.home();
+            if (typeof window.home === 'function') {
+                window.home();
+            } else {
+                console.error('window.home function is not defined');
+            }
         } else {
-            window.about();
+            if (typeof window.about === 'function') {
+                window.about();
+            } else {
+                console.error('window.about function is not defined');
+            }
         }
     })
     .catch((error: any) => {

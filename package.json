@@ -13,18 +13,19 @@
     "@types/crossroads": "^0.0.30",
     "@types/hasher": "^0.0.32",
     "crossroads": "^0.12.2",
+    "glob": "^10.3.3",
     "css-loader": "^6.8.1",
     "hasher": "^1.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
     "terser-webpack-plugin": "^5.3.9",
-    "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
+    "sass": "^1.83.0",
+    "sass-loader": "^16.0.4",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
     "@syncfusion/ej2-base": "*",
