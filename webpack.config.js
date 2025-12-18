@@ -5,7 +5,7 @@ const path = require("path");
 
 module.exports = {
   entry: {
-    index: "./src/index.ts"
+     index: "./src/index.ts"
   },
   target: "web",
   module: {
@@ -23,13 +23,11 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              // Use legacy API to maintain compatibility with Syncfusion paths
-              api: 'legacy',
+              api: "modern",
               sassOptions: {
                 //If utilize the syncfusion sass files, then use the following line
-                includePaths: ["node_modules/@syncfusion"],
+                loadPaths: ["node_modules/@syncfusion"],
                 quietDeps: true,
-                silenceDeprecations: ['legacy-js-api', 'import']
               },
             },
           },
@@ -66,11 +64,5 @@ module.exports = {
     minimizer: [new TerserPlugin({
         extractComments: false,
     })],
-  },
-  performance: {
-    hints: false
-  },
-  stats: {
-    warnings: false
   },
 };

@@ -1,8 +1,8 @@
 //sass-lint:disable-all
-@import 'ej2-base/styles/bootstrap.scss';
-@import 'ej2-buttons/styles/bootstrap.scss';
-@import 'ej2-popups/styles/bootstrap.scss';
-@import 'ej2-inputs/styles/bootstrap.scss';
-@import 'ej2-calendars/styles/bootstrap.scss';
-@import 'ej2-grids/styles/bootstrap.scss';
-@import 'ej2-treegrid/styles/bootstrap.scss';
+@use 'ej2-base/styles/bootstrap' as *;
+@use 'ej2-buttons/styles/bootstrap' as *;  
+@use 'ej2-popups/styles/bootstrap' as *;
+@use 'ej2-inputs/styles/bootstrap' as *;
+@use 'ej2-calendars/styles/bootstrap' as *;
+@use 'ej2-grids/styles/bootstrap' as *;
+@use 'ej2-treegrid/styles/bootstrap' as *;
