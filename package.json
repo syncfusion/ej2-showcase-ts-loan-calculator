@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@syncfusion/ej2-base": "*",
+    "@syncfusion/ej2-bootstrap-theme": "*",
     "@syncfusion/ej2-buttons": "*",
     "@syncfusion/ej2-calendars": "*",
     "@syncfusion/ej2-lists": "*",
